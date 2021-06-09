@@ -10,43 +10,51 @@
   <meta name="author" content="MindVolt">
 
   <link rel="stylesheet" href="./styles.css">
-
+  <link rel="stylesheet" href="https://use.typekit.net/pmw6quo.css">
 </head>
 
 <body>
 
   <!-- Hero -->
   <section class="hero h-screen">
-    <nav>
-      <a href="#">
-        <img src="https://via.placeholder.com/300x100" alt="">
-      </a>
-    </nav>
-    <div class="hero-content p-section">
-      <h1 class="hero-title uppercase">
-        Vital Engine is free
-        <br>through the Cares Act
-      </h1>
-      <p class="hero-description">To Make HIPAA Compliant Care Coordination Available for Rural Healthcare in Alabama</p>
+    <div class="hero-bg"></div>
+    <div class="relative w-full flex-center text-center hero-bg-white">
+      <nav>
+        <a href="#">
+          <img width="100%" src="./assets/VitalEngineLogo.png" alt="">
+        </a>
+      </nav>
+      <div class="hero-content p-section">
+        <h1 class="hero-title uppercase">
+          Vital Engine is free
+          <br>through the Cares Act
+        </h1>
+        <p class="hero-description bg-blue-70">
+          To Make HIPAA Compliant Care Coordination
+          <br> Available for Rural Healthcare in Alabama
+        </p>
+      </div>
     </div>
   </section>
 
 
   <!-- Info -->
-  <section class="w-full max-w-5xl flex-center text-center">
-    <div class="p-section">
-      <h2 class="section-title color-blue">Don’t Miss this Opportunity</h2>
-      <p class="color-blue">Register before 12/15/2020</p>
-      <p>
-        On November 25th, 2020, Governor Kay Ivey officially funded a rural healthcare initiative,
-        granting all rural hospitals and health clinics in Alabama, as well as all nursing
-        homes in the state, access to a state-wide collaboration platform called VitalEngine.
-      </p>
-      <p>
-        VitalEngine is a HIPAA compliant Care Coordination tool that allows your facility
-        to collaborate with ANY other healthcare professional or healthcare facility in the state
-        of Alabama. You can utilize VitalEngine from any computer, tablet, or smartphone.
-      </p>
+  <section class="w-full flex-center text-center">
+    <div class="max-w-5xl">
+      <div class="p-section">
+        <h2 class="section-title color-blue font-dax-bold">Don’t Miss this Opportunity</h2>
+        <p class="section-subtitle font-dax color-blue">Register before 12/15/2020</p>
+        <p>
+          On November 25th, 2020, Governor Kay Ivey officially funded a rural healthcare initiative,
+          granting all rural hospitals and health clinics in Alabama, as well as all nursing
+          homes in the state, access to a state-wide collaboration platform called VitalEngine.
+        </p>
+        <p>
+          VitalEngine is a HIPAA compliant Care Coordination tool that allows your facility
+          to collaborate with ANY other healthcare professional or healthcare facility in the state
+          of Alabama. You can utilize VitalEngine from any computer, tablet, or smartphone.
+        </p>
+      </div>
     </div>
   </section>
 
@@ -54,43 +62,48 @@
 
   <!-- Form -->
   <section class="w-full flex-center text-center bg-whitesmoke">
-    <div class="p-section max-w-5xl">
-      <h3 class="section-title">
-        <span>Register</span>
-        <span class="color-blue">Today</span>
-      </h3>
+    <div class="flex-center max-w-5xl">
+      <div class="p-section">
 
-      <form class="form-parent">
-        <div class="form-container">
-          <div class="form-col">
-            <input type="text" name="first-name" id="first-name" placeholder="First Name" autocomplete="given-name">
-            <input type="text" name="last-name" id="last-name" placeholder="Last Name" autocomplete="family-name">
-            <input type="text" name="email" id="input-email" placeholder="Email" autocomplete="email">
+        <h3 class="section-title">
+          <span>Register</span>
+          <span class="color-blue font-bold">Today</span>
+        </h3>
+        <form class="form-parent">
+          <div class="form-container">
+            <div class="form-col">
+              <input type="text" name="first-name" id="first-name" placeholder="First Name" autocomplete="given-name">
+              <input type="text" name="last-name" id="last-name" placeholder="Last Name" autocomplete="family-name">
+              <input type="text" name="email" id="input-email" placeholder="Email" autocomplete="email">
+            </div>
+            <div class="form-col">
+              <input type="tel" name="phone" id="input-phone" placeholder="Phone Number" autocomplete="tel">
+              <select name="facility" id="input-facility">
+                <option value="" class="select-default" selected disabled hidden>Facility</option>
+                <option value="sportsmed">Sportsmed</option>
+                <option value="toc">TOC</option>
+                <option value="grandview">Grandview</option>
+              </select>
+              <button type="submit">
+                <strong class="uppercase">Submit</strong>
+              </button>
+            </div>
           </div>
-          <div class="form-col">
-            <input type="tel" name="phone" id="input-phone" placeholder="Phone Number" autocomplete="tel">
-            <select name="facility" id="input-facility">
-              <option value="sportsmed">Sportsmed</option>
-              <option value="toc">TOC</option>
-              <option value="grandview">Grandview</option>
-            </select>
-            <button type="submit">
-              <strong class="uppercase">Submit</strong>
-            </button>
+          <div class="form-checkboxes">
+            <label class="checkmark-container" for="accept-license">
+              Accept my license now
+              <input type="checkbox" name="accept-license" id="accept-license">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkmark-container" for="webinar-register">
+              Register for Interactive Webinar
+              <input type="checkbox" name="webinar-register" id="webinar-register">
+              <span class="checkmark"></span>
+            </label>
           </div>
-        </div>
-        <div class="form-checkboxes">
-          <label for="accept-license">
-            <input type="checkbox" name="accept-license" id="accept-license">
-            <span>Accept my license now</span>
-          </label>
-          <label for="webinar-register">
-            <input type="checkbox" name="webinar-register" id="webinar-register">
-            <span>Register for Interactive Webinar</span>
-          </label>
-        </div>
-      </form>
+        </form>
 
+      </div>
     </div>
   </section>
 
@@ -98,22 +111,142 @@
 
   <!-- State Authorization -->
   <section class="w-full flex-center text-center">
-    <div class="p-section max-w-5xl">
-
-      <h3 class="section-title color-blue">State Authorization & Eligible Facilities</h3>
-      <div class="images">
-        <div class="">
-          <img src="https://via.placeholder.com/250x150" alt="MOU">
+    <div class="flex-center max-w-5xl">
+      <div class="p-section">
+        <h3 class="section-title font-bold color-blue">State Authorization & Eligible Facilities</h3>
+        <div class="image-tiles">
+          <a href="#" class="tile">
+            <div class="tile-img">
+              <img width="250" src="./assets/MOU.jpg" alt="MOU">
+            </div>
+            <p class="color-blue">MOU</p>
+          </a>
+          <a href="#" class="tile">
+            <div class="tile-img">
+              <img src="https://via.placeholder.com/250x133" alt="List of Qualified Facilities">
+            </div>
+            <p class="color-blue">List of Qualified Facilities</p>
+          </a>
         </div>
-        <div class="">
-          <img src="https://via.placeholder.com/250x150" alt="List of qualified facilities">
-        </div>
+        <p class="">
+          Contact <a href="mailto:info@vitalengine.com">Info@VitalEngine.com</a> for any questions
+        </p>
       </div>
-      <p>
-        Contact <a href="mailto:info@vitalengine.com">Info@VitalEngine.com</a> for any questions
-      </p>
     </div>
   </section>
+
+
+  <!-- Succesfully in Use -->
+  <section class="relative w-full">
+    <div class="uab-bg"></div>
+    <div class="relative w-full flex-center text-center bg-blue-70">
+      <div class="max-w-5xl flex-center">
+        <div class="p-section">
+          <h3 class="section-title color-white">Successfully <span class="font-bold">in Use</span></h3>
+          <p class="color-white">
+            <span class="font-bold">UAB Hospital,</span> a major center for clinical research and home to some of the 
+            <span class="font-bold">top medical</span> programs, has successfully been using VitalEngine <span class="font-bold">for 2 years.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Referral Facilities -->
+  <section class="w-full flex-center text-center">
+    <div class="flex-center max-w-5xl">
+      <div class="p-section">
+        <h3 class="section-title color-blue">Referral Facilities</h3>
+        <div class="referral-list-container">
+          <ul class="referral-list-col">
+            <li>UAB</li>
+            <li>Children's of Alabama</li>
+            <li>St. Vincent's Ascension</li>
+            <li>Grandiew (CHS)</li>
+            <li>Brookwood Baptist</li>
+          </ul>
+          <ul class="referral-list-col">
+            <li>Princeton Baptist</li>
+            <li>Shelby Baptist</li>
+            <li>Walker Baptist</li>
+            <li>USA Health</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="w-full flex-center text-center footer-section">
+    <div class="flex-center color-white">
+      <div class="p-section footer-container">
+        <div class="col">
+          <h4 class="font-dax-bold">Contact Us</h4>
+          <p>Abel Healthcare Enterprises, LLC</p>
+          <p>1500 1st Ave North 
+            <br>Birmingham, AL 35203
+          </p>
+          <p>Tel: <a href="tel:8444669432">(844) 466-9432</a></p>
+          <p>Email: <a href="mailto:info@vitalengine.com">Info@VitalEngine.com</a></p>
+        </div>
+        <div class="col">
+          <h4 class="font-dax-bold">Social</h4>
+          <div class="inline-icon">
+            <a href="#">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="white" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><g></g><g><g><path d="M426.8,64H85.2C73.5,64,64,73.5,64,85.2l0,341.6c0,11.7,9.5,21.2,21.2,21.2H256V296h-45.9v-56H256v-41.4
+                c0-49.6,34.4-76.6,78.7-76.6c21.2,0,44,1.6,49.3,2.3v51.8l-35.3,0c-24.1,0-28.7,11.4-28.7,28.2V240h57.4l-7.5,56H320v152h106.8
+                c11.7,0,21.2-9.5,21.2-21.2V85.2C448,73.5,438.5,64,426.8,64z"></path></g></g></svg>
+              <span>Facebook</span>
+            </a>
+          </div>
+          <div class="inline-icon">
+            <a href="#">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="white" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path d="M492,109.5c-17.4,7.7-36,12.9-55.6,15.3c20-12,35.4-31,42.6-53.6c-18.7,11.1-39.4,19.2-61.5,23.5
+                C399.8,75.8,374.6,64,346.8,64c-53.5,0-96.8,43.4-96.8,96.9c0,7.6,0.8,15,2.5,22.1c-80.5-4-151.9-42.6-199.6-101.3
+                c-8.3,14.3-13.1,31-13.1,48.7c0,33.6,17.2,63.3,43.2,80.7C67,210.7,52,206.3,39,199c0,0.4,0,0.8,0,1.2c0,47,33.4,86.1,77.7,95
+                c-8.1,2.2-16.7,3.4-25.5,3.4c-6.2,0-12.3-0.6-18.2-1.8c12.3,38.5,48.1,66.5,90.5,67.3c-33.1,26-74.9,41.5-120.3,41.5
+                c-7.8,0-15.5-0.5-23.1-1.4C62.8,432,113.7,448,168.3,448C346.6,448,444,300.3,444,172.2c0-4.2-0.1-8.4-0.3-12.5
+                C462.6,146,479,129,492,109.5z"></path></svg>
+              <span>Twitter</span>
+            </a>
+          </div>
+          <div class="inline-icon">
+            <a href="#">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="white" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><g><path d="M318.2,230.9l-1.6-7l-156.6,0V288h90.7c-9.4,45-48.4,63.6-84.1,63.6c-26,0-50.2-7.8-68.3-25.3
+                c-18.6-18.1-28.9-43.1-28.9-70.4c0-27.1,9.8-51.8,27.6-69.6c17.7-17.7,42-25.4,68.7-25.4c30.5,0,49.9,13.8,58.1,21.1l48-47.7
+                C258.3,122.6,221.5,93,164.1,93c0,0,0,0,0,0c-44.3,0-86.7,16.8-117.7,47.8C15.9,171.3,0,215.2,0,256s15,82.6,44.6,113.3
+                C76.3,402,121.2,419,167.5,419c42.1,0,81.9-16.5,110.3-46.3c28-29.4,42.4-70.1,42.4-112.7C320.1,242,318.3,231.3,318.2,230.9z"></path><polygon points="512,224 455,224 455,167 414,167 414,224 357,224 357,265 414,265 414,322 455,322 455,265 512,265 	"></polygon></g></svg>
+              <span>Google Plus</span>
+            </a>
+          </div>
+          <div class="inline-icon">
+            <a href="#">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="white" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><g><path d="M417.2,64H96.8C79.3,64,64,76.6,64,93.9v321.1c0,17.4,15.3,32.9,32.8,32.9h320.3c17.6,0,30.8-15.6,30.8-32.9V93.9
+                C448,76.6,434.7,64,417.2,64z M183,384h-55V213h55V384z M157.4,187H157c-17.6,0-29-13.1-29-29.5c0-16.7,11.7-29.5,29.7-29.5
+                c18,0,29,12.7,29.4,29.5C187.1,173.9,175.7,187,157.4,187z M384,384h-55v-93.5c0-22.4-8-37.7-27.9-37.7
+                c-15.2,0-24.2,10.3-28.2,20.3c-1.5,3.6-1.9,8.5-1.9,13.5V384h-55V213h55v23.8c8-11.4,20.5-27.8,49.6-27.8
+                c36.1,0,63.4,23.8,63.4,75.1V384z"></path></g></svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <h4 class="font-dax-bold">Download app</h4>
+          <div class="download-banners">
+            <a href="#">
+              <img width="180px" src="./assets/PlayStoreBadge.png" alt="Get it on Google Play">
+            </a>
+            <a href="#">
+              <img width="180px" src="./assets/AppStoreBadge.png" alt="Get it on the App Store">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
 
 
   <script src="./main.js"></script>
